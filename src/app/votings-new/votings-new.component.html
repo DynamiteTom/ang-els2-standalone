@@ -1,0 +1,24 @@
+<p>elements-new works!</p>
+
+<div class="wrapper">
+	<mat-card>
+		<mat-card-header>
+			<mat-card-title>Voting new example</mat-card-title>
+		</mat-card-header>
+
+		<!-- voting results -->
+		<mat-card-content>
+			<span>Voting for Yes</span>
+		    <mat-progress-bar [value]="yesVotings" color="primary"></mat-progress-bar>
+			<span>Voting for No</span>
+			<mat-progress-bar [value]="noVotings" color="warn"></mat-progress-bar>
+		</mat-card-content>
+
+	
+		<!-- action buttons to vote -->
+		<mat-card-actions>
+			<button mat-flat-button color="primary" (click)="onVoteClick('Yes')">Yes</button>
+			<button mat-flat-button color="warn" (click)="onVoteClick('No')">No</button>
+		</mat-card-actions>
+	</mat-card>
+</div>
