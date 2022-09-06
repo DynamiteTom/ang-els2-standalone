@@ -6,12 +6,14 @@
     "start": "ng serve",
     "build": "ng build --output-hashing none",
     "dirProj": "C:\\Angular\\code\\0-Sept22\\example_projects-main\\my-ang-els-standalone\\",
-    "package": "uglifyjs C:/Diary/elementsdist/runtime.js C:/Diary/elementsdist/polyfills.js C:/Diary/elementsdist/main.js -o votingsNew2.js -c -m",
+    "package": "uglifyjs ./dist/ang-els2-standalone/runtime.js ./dist/ang-els2-standalone/polyfills.js ./dist/ang-els2-standalone/main.js -o votingsNew3.js -c -m",  
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve": "http-server gzip"
+  
   },
   "private": true,
+  
   "dependencies": {
     "@angular/animations": "^14.1.0",
     "@angular/cdk": "^14.2.0",
